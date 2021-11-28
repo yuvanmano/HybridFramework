@@ -1,0 +1,27 @@
+package com.qa.opencart.test;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
+import com.qa.opencart.factory.DriverFactory;
+
+public class BaseTest {
+	
+	public DriverFactory driverFactory;
+	public WebDriver driver;
+	
+	@BeforeTest
+	public void setUp() {
+		driver = driverFactory.init_driver();
+		
+	}
+	
+	@AfterTest
+	public void tearDown() {
+		
+		driver.quit();
+		
+	}
+
+}

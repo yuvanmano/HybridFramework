@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.681">
+    <testcase classname="Testing on checkout" name="Testing&#9;Checkout details" time="0.107">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I launch the url......................................................undefined
+When checking shipping details..............................................skipped
+And checking payment details................................................skipped
+Then checking number of products............................................skipped
+]]></failure>
+    </testcase>
+</testsuite>

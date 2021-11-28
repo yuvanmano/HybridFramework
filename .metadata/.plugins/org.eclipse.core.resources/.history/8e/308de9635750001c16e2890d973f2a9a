@@ -1,0 +1,9 @@
+package com.qa.opencart.pages;
+
+import org.openqa.selenium.By;
+
+public class LoginPage {
+	By Username = By.id("");
+	By Password = By.id("");
+	
+}

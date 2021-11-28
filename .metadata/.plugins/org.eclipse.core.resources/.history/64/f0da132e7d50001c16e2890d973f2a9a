@@ -1,0 +1,10 @@
+browser = FF
+url = https://demo.opencart.com/index.php?route=account/login
+headless = false
+highlight = false
+
+username = manoharan.umapathy@gmail.com
+password = Mano123
+
+remote = false
+hubUrl =

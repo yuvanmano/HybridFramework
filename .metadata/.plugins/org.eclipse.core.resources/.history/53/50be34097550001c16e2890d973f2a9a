@@ -1,0 +1,39 @@
+package com.qa.opencart.test;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.qa.opencart.utils.ConstantUtils;
+
+import io.netty.util.Constant;
+
+public class LoginPageTest extends BaseTest {
+
+	@Test
+	public void loginPageTitleTest() {
+		
+		String loginPageTitle = loginPage.getLoginPageTitle();
+		System.out.println("Login Page Title" + loginPageTitle);
+		Assert.assertEquals(loginPageTitle, ConstantUtils.LOGIN_PAGE_TITLE);
+		
+	}
+	
+	@Test
+	public void loginAppTest(String uname, String pwd) {
+		
+		loginPage.loginOpenCart(uname, pwd);
+	}
+	
+	@Test
+	public void forgettonPWdLinkTest() {
+		
+		
+	}
+	
+	@Test
+	public void loginLinkTest() {
+		
+		
+	}
+	
+}

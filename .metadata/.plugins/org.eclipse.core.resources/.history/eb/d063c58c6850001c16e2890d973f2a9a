@@ -1,0 +1,10 @@
+browser = Chrome
+url = https://demo.opencart.com/index.php?route=account/login
+headless = false
+highlight = false
+
+username =
+password = 
+
+remote = false
+hubUrl =

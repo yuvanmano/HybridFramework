@@ -1,0 +1,38 @@
+package com.qa.opencart.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class LoginPage {
+	private By username = By.id("input-email");
+	private By password = By.id("input-password");
+	private By forgottenPwdLink = By.xpath("(//div/a[text()='Forgotten Password'])[1]");
+	private By login = By.xpath("//input[@type='submit']"); 
+	private By loginLink = By.xpath("(//li/a[text()='Login'])[2]");
+	
+	private WebDriver driver;
+	
+	public LoginPage(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	public void getLoginPageTitle() {
+		
+	}
+	
+	public void loginOpenCart() {
+	
+
+	}
+	
+	public void loginLinkExist() {
+		
+
+	}
+	
+	public void forgottenPwdLinkExist() {
+		
+
+	}
+	
+}

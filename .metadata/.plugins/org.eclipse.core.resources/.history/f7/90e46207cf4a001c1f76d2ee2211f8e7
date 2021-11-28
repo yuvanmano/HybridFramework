@@ -1,0 +1,35 @@
+package com.qa.orange.parallel;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class CrossBrowserTesting {
+	WebDriver driver;
+	@Parameters("browser")
+	@Test
+	public void init_Browser(String broweserName) {
+		switch (broweserName.toUpperCase()) {
+		case "CHORME":
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			break;
+		case "IE":
+			WebDriverManager.iedriver().setup();
+			driver = new InternetExplorerDriver();
+			break;
+		default:
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+			driver.get("https://www.google.com");
+			driver.manage().window().maximize();
+
+		}
+
+	}
+}

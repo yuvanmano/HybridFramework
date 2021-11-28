@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;windowHandle&apos; from expression &apos;driver.getWindowHandle()&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumNew&apos;&#x0D;&#x0A;- Variable name: &apos;windowHandle&apos;&#x0D;&#x0A;- Destination method: &apos;com.web.apps.HandleWindow.main(...)&apos;&#x0D;&#x0A;- Variable expression: &apos;driver.getWindowHandle()&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;windowHandle&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;com.web.apps{HandleWindow.java" name="windowHandle" replace="true" selection="486 0" stamp="1636998156047" varType="false" version="1.0"/>
+</session>
